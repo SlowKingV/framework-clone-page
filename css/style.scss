@@ -1,67 +1,68 @@
-$col-sm-side-padding: 5;
-$col-md-side-padding: 10;
-$col-lg-side-padding: 10;
+$primary-color: #cc9543;
 
-.container {
+.hidden {
+    display: none;
+}
+
+.navbar {
     width: 100vw;
-    padding: 0 5px;
-}
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    top: 0;
 
-.row {
-    width: 100%;
-    padding: 5px 0;
-}
+    figure {
+        display: flex;
+        align-items: center;
 
-@for $i from 1 through 12 {
-    .col-sm-#{$i} {
-        width: (100 / 12 * $i) + vw;
-        padding: 0 $col-sm-side-padding + px;
+        img {
+            height: 60px;
+        }
+
+        figcaption {
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
     }
-}
 
-@for $i from 1 through 11 {
-    .offset-col-sm-#{$i} {
-        margin-left: ((100 / 12 + $col-sm-side-padding * 2) * $i) + vw;   
-    }
-}
-
-@media screen and(min-width: 720px) {
-    .container {
+    ul {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
         width: 100vw;
-        padding: 0 15px;
-    }
+        height: 100vh;
+        background: black;
+        color: white;
+        top: 0;
 
-    @for $i from 1 through 12 {
-        .col-md-#{$i} {
-            width: (100 / 12 * $i) + vw;
-            padding: 0 $col-md-side-padding + px;    
+        img {
+            height: 60px;
+        }
+
+        .dropdown div {
+            text-align: center;
         }
     }
 
-    @for $i from 1 through 11 {
-        .offset-col-md-#{$i} {
-            margin-left: ((100 / 12 + $col-md-side-padding * 2) * $i) + vw;   
-        }
-    }
-}
-
-@media screen and(min-width: 1024px) {
-    .container {
-        width: 1024px;
-        padding: 0 30px;
-        margin: 0 auto;
+    .menu-icon svg {
+        height: 30px;
     }
 
-    @for $i from 1 through 12 {
-        .col-lg-#{$i} {
-            width: (100 / 12 * $i) + vw;
-            padding: 0 $col-lg-side-padding + px;    
-        }
+    #toggle {
+        display: none;
     }
 
-    @for $i from 1 through 11 {
-        .offset-col-lg-#{$i} {
-            margin-left: ((100 / 12 + $col-lg-side-padding * 2) * $i) + vw;   
-        }
+    #toggle:checked ~ ul {
+        display: flex;
     }
 }

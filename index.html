@@ -10,21 +10,39 @@
 </head>
 <body>
     
-    <nav>
+    <nav class="navbar">
         <figure>
             <img src="img/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" alt="logo">
-            <figcaption>The Odin Project</figcaption>
+            <figcaption><a href="javascript:void(0)">The Odin Project</a></figcaption>
         </figure>
 
+        <input id="toggle" type="checkbox">
+
         <ul>
+            <li>
+                <label for="toggle">X</label>
+            </li>
+            <li><img src="img/odin-logo-94557650fea28e24cc04263ece9c08ab5956e0d344faa4d03cdb732e9f9983d4.svg" alt="logo"></li>
             <li>Lorem.</li>
-            <li>Distinctio!</li>
+            <li>
+                Distinctio!
+                <div class="dropdown">
+                    <div><i></i>Forum</div>
+                    <div><i></i>Chat</div>
+                </div>
+            </li>
             <li>Quaerat.</li>
             <li>Ipsam.</li>
             <li>|</li>
             <li>Ipsa?</li>
             <li>Quasi.</li>
         </ul>
+
+        <label class="menu-icon" for="toggle">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#6abfc3" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 8h24M4 16h24M4 24h24"/>
+            </svg>
+        </label>
     </nav>
     
 </body>
