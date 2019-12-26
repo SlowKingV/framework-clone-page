@@ -2,9 +2,9 @@ $col-sm-side-padding: 5;
 $col-md-side-padding: 10;
 $col-lg-side-padding: 10;
 
-.container {
-    width: 100vw;
-    padding: 0 5px;
+.container,
+.container-fluid {
+    width: 100%;
 }
 
 .row {
@@ -12,35 +12,36 @@ $col-lg-side-padding: 10;
     padding: 5px 0;
 }
 
-@for $i from 1 through 12 {
+@for $i from 0 through 12 {
     .col-sm-#{$i} {
-        width: (100 / 12 * $i) + vw;
+        width: (100% / 12 * $i);
         padding: 0 $col-sm-side-padding + px;
     }
 }
 
-@for $i from 1 through 11 {
+@for $i from 0 through 11 {
     .offset-col-sm-#{$i} {
-        margin-left: ((100 / 12 + $col-sm-side-padding * 2) * $i) + vw;   
+        margin-left: ((100% / 12) * $i);
     }
 }
 
 @media screen and(min-width: 720px) {
     .container {
-        width: 100vw;
+        width: 100%;
         padding: 0 15px;
     }
 
-    @for $i from 1 through 12 {
+    @for $i from 0 through 12 {
         .col-md-#{$i} {
-            width: (100 / 12 * $i) + vw;
-            padding: 0 $col-md-side-padding + px;    
+            width: (100% / 12 * $i);
+            padding: 0 $col-md-side-padding + px;   
+            display: inline-block;
         }
     }
 
-    @for $i from 1 through 11 {
+    @for $i from 0 through 11 {
         .offset-col-md-#{$i} {
-            margin-left: ((100 / 12 + $col-md-side-padding * 2) * $i) + vw;   
+            margin-left: ((100% / 12) * $i);   
         }
     }
 }
@@ -52,16 +53,16 @@ $col-lg-side-padding: 10;
         margin: 0 auto;
     }
 
-    @for $i from 1 through 12 {
+    @for $i from 0 through 12 {
         .col-lg-#{$i} {
-            width: (100 / 12 * $i) + vw;
+            width: (100% / 12 * $i);
             padding: 0 $col-lg-side-padding + px;    
         }
     }
 
-    @for $i from 1 through 11 {
+    @for $i from 0 through 11 {
         .offset-col-lg-#{$i} {
-            margin-left: ((100 / 12 + $col-lg-side-padding * 2) * $i) + vw;   
+            margin-left: ((100% / 12) * $i);   
         }
     }
 }

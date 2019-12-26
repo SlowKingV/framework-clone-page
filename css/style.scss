@@ -23,9 +23,16 @@
 }
 
 $primary-color: #cc9543;
+$secondary-color: rgba(74,74,74,0.7);
+$button-primary: #6abfc3;
+
+h1, h2, h3, h4, p {
+    color: #4a4a4a;
+}
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 .hidden {
@@ -107,7 +114,6 @@ body {
 
         .dropdown div {
             display: flex;
-            align-items: center;
             text-align: center;
         }
 
@@ -158,10 +164,10 @@ body {
             font-size: 5vh;
             line-height: 5vh;
         }
+    }
 
-        li .list-item i {
-            display: none;
-        }
+    .list-item i {
+        display: none;
     }
 
     .menu-icon svg {
@@ -174,6 +180,89 @@ body {
 
     #toggle:checked ~ ul {
         display: flex;
+    }
+}
+
+header {
+    padding-bottom: 60px;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: $primary-color;
+        padding-bottom: 30px;
+    }
+
+    p {
+        color: $secondary-color;
+        font-size: 18px;
+        padding-bottom: 70px;
+    }
+
+    a {
+        border-radius: 0.2em;
+        box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+        color: #fff;
+        display: inline-block;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        padding: 16px 56px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        background-color: $button-primary;
+        line-height: 1.5;
+    }
+
+    a:hover {
+        opacity: 0.8;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.how-it-works {
+    padding-top: 100px;
+
+    .title {
+        margin: 0 auto 100px;
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 36px;
+        }
+
+        p {
+            color: $secondary-color;
+            font-size: 18px;
+            line-height: 1.88;
+        }
+    }
+
+    .row {
+
+        > div {
+            padding: 16px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 50px 0 20px;
+            letter-spacing: 0.2px;
+            line-height: 1.2;
+        }
+
+        p {
+            color: $secondary-color;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+            line-height: 1.88;
+        }
     }
 }
 
@@ -282,6 +371,7 @@ body {
 
             .dropdown-menu i {
                 width: 30px;
+                display: initial;
             }
 
             .list-icon {
