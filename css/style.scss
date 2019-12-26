@@ -29,6 +29,7 @@ $button-primary: #6abfc3;
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, p {
@@ -144,6 +145,7 @@ h1, h2, h3, h4, p {
         .dropdown-menu {
             height: 0;
             overflow: hidden;
+            background: #fff;
         }
 
         .dropdown a > div:first-of-type:after {
@@ -413,9 +415,107 @@ header {
     }
 }
 
+footer {
+    display: flex;
+    min-height: 277px;
+    transform: translateY(15px);
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand {
+        flex: 2;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-decoration: none;
+
+            div {
+                color: #cc9543;
+                text-transform: uppercase;
+                font-family: "Norse";
+                letter-spacing: 0.4px;
+                font-weight: bold;
+                font-size: 1.6em;
+                display: inline-block;
+                padding-left: 0.5em;
+            }
+        }
+    }
+
+    .social {
+        flex: 1;
+
+        ul {
+            width: 100%;
+            display: flex;
+        }
+
+        li {
+            display: inline-block;
+            flex: 1;
+        }
+
+        a {
+            color: $primary-color;
+            font-size: 24px;
+        }
+    }
+
+    .links {
+        flex: 2;
+        text-align: left;
+
+        > div {
+            width: 130px;
+        }
+
+        a {
+            display: block;
+            color: rgba(74,74,74,0.7);
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 24px;
+            height: 30px;
+        }
+    }
+
+    a:hover {
+        color: #000;
+    }
+}
+
 @media screen and (max-width: 719px) {
     .navbar {
         padding: 0 20px;
+    }
+
+    footer {
+        min-height: 140px;
+
+        .brand {
+            display: none;
+        }
+
+        .social {
+            flex: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    footer {
+        min-height: 70px;
+
+        .links {
+            display: none;
+        }
     }
 }
 
@@ -481,6 +581,7 @@ header {
                 padding: 0 8px 0 0.5rem;
                 box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
                 transform: translate(-12px, 90%);
+                z-index: 100;
             }
 
             .dropdown a > div:first-of-type {
