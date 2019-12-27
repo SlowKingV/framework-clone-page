@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'norse';
+  font-family: "norse";
   src: url("../font/norse-webfont.eot");
   src: url("../font/norse-webfont.eot?#iefix") format("embedded-opentype"), url("../font/norse-webfont.woff2") format("woff2"), url("../font/norse-webfont.woff") format("woff"), url("../font/norse-webfont.ttf") format("truetype"), url("../font/norse-webfont.svg#norseregular") format("svg");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'norse';
+  font-family: "norse";
   src: url("../font/norsebold-webfont.eot");
   src: url("../font/norsebold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/norsebold-webfont.woff2") format("woff2"), url("../font/norsebold-webfont.woff") format("woff"), url("../font/norsebold-webfont.ttf") format("truetype"), url("../font/norsebold-webfont.svg#norsebold") format("svg");
   font-weight: bold;
@@ -20,14 +20,18 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   color: #4a4a4a;
 }
 
 .button {
   border-radius: 0.2em;
   -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
   color: #fff;
   display: inline-block;
   font-size: 1em;
@@ -57,11 +61,11 @@ h1, h2, h3, h4, p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,8 +80,8 @@ h1, h2, h3, h4, p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   font-size: 1.25rem;
@@ -105,14 +109,14 @@ h1, h2, h3, h4, p {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   right: 0;
   width: 100vw;
@@ -157,14 +161,16 @@ h1, h2, h3, h4, p {
   overflow: hidden;
   background: #fff;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  will-change: height;
 }
 
 .navbar ul .dropdown a > div:first-of-type {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar ul .dropdown a > div:first-of-type:after {
@@ -188,9 +194,11 @@ h1, h2, h3, h4, p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
 }
 
 .navbar ul .divider {
@@ -206,8 +214,6 @@ h1, h2, h3, h4, p {
   font-weight: normal;
   letter-spacing: 0.05em;
   border: none;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   background-color: transparent;
   color: #cc9543;
   padding: 0;
@@ -316,7 +322,7 @@ header p {
   text-align: center;
   background: #fff;
   -webkit-box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 .badges h2 {
@@ -454,17 +460,17 @@ footer > div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer .brand {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
 footer .brand a {
@@ -472,14 +478,14 @@ footer .brand a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-decoration: none;
 }
 
@@ -496,8 +502,8 @@ footer .brand a div {
 
 footer .social {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 footer .social ul {
@@ -510,8 +516,8 @@ footer .social ul {
 footer .social li {
   display: inline-block;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 footer .social a {
@@ -521,8 +527,8 @@ footer .social a {
 
 footer .links {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   text-align: left;
 }
 
@@ -543,6 +549,53 @@ footer a:hover {
   color: #000;
 }
 
+.floating-dropdown {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-dropdown:hover .floating-dropdown-hidden-item {
+  margin: 0 9.6px 20px 9.6px;
+  opacity: 1;
+  will-change: margin, opacity;
+}
+
+.floating-dropdown-item {
+  padding: 16px;
+  border-radius: 50%;
+  background: #6abfc3;
+  -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.floating-dropdown-hidden-item {
+  position: relative;
+  padding: 16px 8px;
+  margin: 0 9.6px -50px 9.6px;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: margin 1s ease-out, opacity 0.5s;
+  transition: margin 1s ease-out, opacity 0.5s;
+}
+
+.floating-dropdown-hidden-item i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.main-floating-button {
+  position: relative;
+  z-index: 2;
+}
+
+.main-floating-button i {
+  font-size: 32px;
+  color: #fff;
+}
+
 @media screen and (max-width: 719px) {
   .navbar {
     padding: 0 20px;
@@ -555,8 +608,8 @@ footer a:hover {
   }
   footer .social {
     -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -ms-flex: 2;
+    flex: 2;
   }
 }
 
@@ -585,11 +638,11 @@ footer a:hover {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     position: static;
     width: auto;
     height: 94px;
@@ -605,19 +658,19 @@ footer a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .navbar ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .navbar ul .divider {
     display: -webkit-box;
@@ -629,8 +682,8 @@ footer a:hover {
   .navbar ul .dropdown {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .navbar ul .dropdown a {
     display: -webkit-box;
@@ -638,14 +691,14 @@ footer a:hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100%;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -658,9 +711,9 @@ footer a:hover {
     min-width: 10rem;
     padding: 0 8px 0 0.5rem;
     -webkit-box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
     -webkit-transform: translate(-12px, 90%);
-            transform: translate(-12px, 90%);
+    transform: translate(-12px, 90%);
     z-index: 100;
   }
   .navbar ul .dropdown a > div:first-of-type {
@@ -669,8 +722,8 @@ footer a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .navbar ul .dropdown a > div:first-of-type:after {
     content: "";
@@ -691,8 +744,8 @@ footer a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 50%;
     text-align: left;
   }
