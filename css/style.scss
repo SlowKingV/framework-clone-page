@@ -68,11 +68,14 @@ h1, h2, h3, h4, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     top: 0;
-    // width: 100vw;
+    left: 0;
+    right: 0;
     padding: 0 168px;
     margin-bottom: 50px;
+    background-color: #ffffff;
+
 
     figure {
         display: flex;
@@ -110,7 +113,6 @@ h1, h2, h3, h4, p {
         width: 100vw;
         height: 100vh;
         background: #ffffff;
-        // color: white;
         top: 0;
 
         .menu-icon {
@@ -128,8 +130,8 @@ h1, h2, h3, h4, p {
         }
 
         .dropdown-divider {
-            width: calc(100% - 3em);
-            margin: .5rem 3em;
+            width: calc(100% - 6em);
+            margin: .5rem 3em .5rem calc(3em + 15px);
             border: 1px solid #cc9543;
         }
 
@@ -146,6 +148,11 @@ h1, h2, h3, h4, p {
             height: 0;
             overflow: hidden;
             background: #fff;
+            align-items: center;
+        }
+
+        .dropdown a > div:first-of-type {
+            align-items: center;
         }
 
         .dropdown a > div:first-of-type:after {
@@ -284,7 +291,6 @@ header {
 
     .badge {
         display: inline-block;
-        // flex-direction: column;
         max-width: 254px;
         width: 254px;
         height: 256px;
@@ -418,7 +424,7 @@ header {
 footer {
     display: flex;
     min-height: 277px;
-    transform: translateY(15px);
+    padding-top: 15px;
 
     > div {
         display: flex;
@@ -527,6 +533,8 @@ footer {
 
 @media screen and (min-width: 1024px) {
     .navbar {
+        position: relative;
+
         ul {
             display: flex;
             flex-direction: row;
@@ -574,8 +582,11 @@ footer {
                 padding-left: 0.5rem;
             }
 
-            .dropdown a:hover .dropdown-menu {
+            .dropdown .dropdown-menu {
                 position: absolute;
+            }
+
+            .dropdown a:hover .dropdown-menu {
                 height: 89px;
                 min-width: 10rem;
                 padding: 0 8px 0 0.5rem;
