@@ -2,7 +2,7 @@
 
 This project is a clone of the webpage https://www.theodinproject.com Where is used for the layout our own created CSS grid.
 
-* [CSS Grid](https://github.com/Jaakal/grid-based-framework) - The created grid framework
+* [CSS Grid](https://github.com/Jaakal/grid-based-framework/tree/grid) - The created grid framework
 
 ## Screenshot
 
