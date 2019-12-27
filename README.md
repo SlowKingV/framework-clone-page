@@ -16,6 +16,9 @@ One has to download the project and open index.html in the browser.
 
 * [VS Code](https://code.visualstudio.com/) - The code editor used
 
+## Live Demo
+ You can check a live version of this project here: https://slowkingv.github.io/framework-clone-page/
+
 ## Authors
 
 * **Jaak Kivinukk** - *Initial work* - [Jaakal](https://github.com/Jaakal)
